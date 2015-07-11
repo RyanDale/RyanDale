@@ -144,7 +144,6 @@
 	}
 
    /* hide menu panel */
-   /*
    #nav-wrap ul#nav {
       height: auto;
 		display: none;
@@ -156,7 +155,6 @@
       top: 12px;
       right: 0;
    }
-   */
 
    /* display menu panels */
 	#nav-wrap:target > ul#nav	{
