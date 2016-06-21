@@ -1,0 +1,12 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Ryan Dale",
+  "description": "Charleston, SC based Software Engineer",
+  "short_name": "Ryan Dale",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#F06000",
+  "background_color": "#333"
+}
