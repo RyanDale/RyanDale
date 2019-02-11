@@ -78,7 +78,7 @@
             let routeName = $transition$.to().name,
                 fromState = $transition$.from(),
                 fromRouteName = fromState.name;
-
+            $rootScope.currentNavItem = $state.current.name.split('.')[0] || 'home';
             /*mixpanelService.track('routeChange', {
                 to: routeName,
                 from: fromRouteName
@@ -89,11 +89,6 @@
         }
 
         $transitions.onSuccess({},  onSuccess);
-        $timeout(() => {
-            $rootScope.currentNavItem = $state.current.name.split('.')[0] || 'home';
-        });
-
-        //routerHelper.configureStates($state.get());
     }
 
 }());
