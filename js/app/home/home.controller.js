@@ -3,8 +3,8 @@
 
     class HomeController {
         /* @ngInject */
-        constructor() {
-            console.log('home');
+        constructor(articles) {
+            this.articles = articles;
         }
 
     }

@@ -3,8 +3,8 @@
 
     class ArticleController {
         /* @ngInject */
-        constructor() {
-            console.log('article');
+        constructor($stateParams) {
+            angular.element('.article-container').load(`articles/${$stateParams.id}.html`);
         }
 
     }

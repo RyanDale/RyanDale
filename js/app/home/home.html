@@ -22,7 +22,29 @@
         </md-card-title-media>
     </md-card-title>
     <md-card-actions layout="row" layout-align="front center">
-        <md-button class="md-primary md-raised" ui-sref="resources">Read More</md-button>
-        <md-button class="md-raised" href="mailto:contact@ryan-dale.com">Contact</md-button>
+        <md-button class="md-primary md-raised" href="mailto:contact@ryan-dale.com">Contact</md-button>
     </md-card-actions>
+</md-card>
+<md-card md-theme-watch>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">Recent Blogs</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+        <md-content>
+            <md-list flex>
+                <span ng-repeat="article in $ctrl.articles">
+                    <md-list-item class="md-2-line" ui-sref="resources-article({id: article.link})">
+                        <div class="md-list-item-text">
+                            <h3>{{ article.name }}</h3>
+                            <p>{{ article.description }}</p>
+                        </div>
+                        <span>{{ article.date }}</span>
+                    </md-list-item>
+                <md-divider></md-divider>
+                </span>
+            </md-list>
+        </md-content>
+    </md-card-content>
 </md-card>

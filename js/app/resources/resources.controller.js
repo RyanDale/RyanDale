@@ -3,8 +3,8 @@
 
     class ResourcesController {
         /* @ngInject */
-        constructor() {
-            console.log('res');
+        constructor(articles) {
+            this.articles = articles;
         }
 
     }
